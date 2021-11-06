@@ -2,6 +2,8 @@
 
  Um site criado para aprender os fundamentos de html, css, javascript, express js e utiliza o banco de dados mongo db 
 ![alt text](https://github.com/izkeas/Total-Food-s-website/blob/main/homepage.png?raw=true)
+![alt text](https://github.com/izkeas/Total-Food-s-website/blob/main/search.png?raw=true)
+
 
 ## Instalação
  para instala-lo basta instalar todas as dependencias com npm install dentro da pasta principal
