@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<%- include('includes/head'); %>
+
+<body onload="start();">
+    <%- include('includes/header'); %>
+
+    <section>
+
+        <div class="poster">
+            <img src="/img/posters/hamburger.svg" class="posterimage" alt="hamburger">
+        </div>
+
+        <main>
+        
+            <div>
+                <h1 class="line-text">PROMOÇÃO!</h1>
+                <hr class="line">
+            </div>
+
+            <div class="promotion itemgrid">
+                <div class="items">
+                    <div class="box">
+    
+                        <div class="item" href="/items/batata-frita">
+                            <img src="/img/items/batata-frita.svg"    class=item-image alt="" width="20%">
+                        </div>
+    
+                        <img src="/img/name-price.svg" class="name-price" alt="">
+                        <h1 class="name">Batatas fritas</h1>
+                        <h1 class="price"> R$4</h1>
+    
+                    </div>
+                    <div class="box">
+                        <div class="item" href="/items/coxinha">
+                            <img src="/img/items/coxinha.svg"    class=item-image alt="" width="20%">
+                            
+                        </div>
+    
+                        <img src="/img/name-price.svg" class="name-price" alt="">
+                        <h1 class="name">Coxinhas</h1>
+                        <h1 class="price"> R$4</h1>
+                    </div>
+                    <div class="box">
+                        <div class="item" href="/items/bolo-chocolate">
+                            <img src="/img/items/bolo-chocolate.svg"    class=item-image alt="" width="20%">
+                            
+                        </div>
+    
+                        <img src="/img/name-price.svg" class="name-price" alt="">
+                        <h1 class="name">Bolo chocolat</h1>
+                        <h1 class="price"> R$4</h1>
+                    </div>
+                    <div class="box">
+    
+                        <div class="item" href="/items/beef">
+                            <img src="/img/items/beef.svg"    class=item-image alt="" width="20%">
+                        </div>
+    
+                        <img src="/img/name-price.svg" class="name-price" alt="">
+                        <h1 class="name">Beef</h1>
+                        <h1 class="price"> R$4</h1>
+    
+                    </div>
+                    <div class="box">
+                        <div class="item" href="/items/pizza">
+                            <img src="/img/items/pizza.svg"    class=item-image alt="" width="20%">
+                            
+                        </div>
+    
+                        <img src="/img/name-price.svg" class="name-price" alt="">
+                        <h1 class="name">Pizza</h1>
+                        <h1 class="price"> R$4</h1>
+                    </div>
+                    <div class="box">
+                        <div class="item" href="/items/pastel">
+                            <img src="/img/items/pastel.svg"    class=item-image alt="" width="20%">
+                            
+                        </div>
+    
+                        <img src="/img/name-price.svg" class="name-price" alt="">
+                        <h1 class="name">Pastel</h1>
+                        <h1 class="price"> R$4</h1>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <h1 class="line-text">Categorias</h1>
+                <hr class="line">
+            </div>
+    
+            <div class="categorias itemgrid">
+                <div class="items">
+                    <div class="box">
+                        <div class="item" href="/pesquisa/?category=salgados">
+                            <img src="/img/items/batata-frita.svg"    class=item-image alt="" width="20%">
+                            
+                        </div>
+    
+                        <img src="/img/name.svg" class="name-bar" alt="">
+                        <h1 class="name">Salgados</h1>
+                    </div>
+
+                    <div class="box">
+                        <div class="item" href="/pesquisa/?category=sorvetes">
+                            <img src="/img/items/sorvete-baunilha.svg"    class=item-image alt="" width="20%">
+                            
+                        </div>
+    
+                        <img src="/img/name.svg" class="name-bar" alt="">
+                        <h1 class="name">Sorvetes</h1>
+                    </div>
+                    <div class="box">
+                        <div class="item" href="/pesquisa/?category=bolos">
+                            <img src="/img/items/bolo-chocolate.svg"    class=item-image alt="" width="20%">
+                            
+                        </div>
+    
+                        <img src="/img/name.svg" class="name-bar" alt="">
+                        <h1 class="name">Bolos</h1>
+                    </div>
+                    <div class="box">
+                        <div class="item" href="/pesquisa/?category=carnes-peixes">
+                            <img src="/img/items/beef.svg"    class=item-image alt="" width="20%">
+                            
+                        </div>
+    
+                        <img src="/img/name.svg" class="name-bar" alt="">
+                        <h1 class="name">Carnes e peixes</h1>
+                    </div>
+                    <div class="box">
+                        <div class="item" href="/pesquisa/?category=pizzas">
+                            <img src="/img/items/pizza.svg"    class=item-image alt="" width="20%">
+                            
+                        </div>
+    
+                        <img src="/img/name.svg" class="name-bar" alt="">
+                        <h1 class="name">Pizzas</h1>
+                    </div>
+                    <div class="box">
+                        <div class="item" href="/pesquisa/">
+                            <img src="/img/items/mais.svg"    class=item-image alt="" width="20%">
+                            
+                        </div>
+    
+                        <img src="/img/name.svg" class="name-bar" alt="">
+                        <h1 class="name">Mais</h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <%- include('includes/footer'); %>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+.menu-box{
+    position: fixed;
+    width: 236px;
+    height: 780px;
+    background-color: rgba(21, 21, 21, 0.90);
+    z-index: 10;
+    top: 0;
+}
+.menu-exit{
+    cursor:  pointer;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.menu-header{
+    width: 236px;
+    height: 40px;
+    background-color: #14104D;
+}
+.menu-item{
+    border-radius: 2px;
+    border:  2px solid rgba(255, 255, 255, 0.2);
+    
+}
+.menu-title{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 1em;
+    color: white;
+    font-size: 20px;
+}
+.menu-text{
+    cursor: pointer;
+
+    margin-left: 1.9em;
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+}
+.menu-text:hover{
+    margin-top: 15px;
+    margin-left: 2em;
+    background-color: #322F2F;
+}

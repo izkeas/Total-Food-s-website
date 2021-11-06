@@ -1,0 +1,148 @@
+/* Items */
+
+.box{
+    position: relative;
+    flex: 0 1 calc(20% - 50px);
+    display: flex;
+    
+}
+.items{
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.item{
+    cursor: pointer;
+    width: 100%;
+    min-height: 90px;
+    min-width: 80px;
+
+    background-color: #C4C4C4;
+    margin: clamp(10px, 1.2vw, 40px);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-content: center;
+}
+.item:hover{
+    border: 3px solid #ccc;
+}
+
+.item-image{
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+    width: 90%;
+    min-height: 60px;
+    min-width: 50px;
+}
+.name-price{
+    position: absolute;
+    width: 90%;
+    bottom: 0;
+}
+.name-bar{
+    position: absolute;
+    width: 90%;
+    bottom: 0;
+}
+.name{
+    position: absolute;
+    width: 90%;
+    margin-bottom: 6px;
+    margin-left: 4px;
+    bottom: 0;
+    font-size: clamp(0.6rem, 1vw, 1rem);
+}
+.price{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-left: 90%;
+    margin-top: 90%;
+    margin-bottom: 4%;
+    margin-right: 10%;
+    font-size: clamp(0.8rem, 3vw, 2.0rem);
+}
+
+.poster{
+    position: relative;
+}
+
+.arrow-box{
+    position: absolute;
+    background-color: rgba(125, 125, 125, 0.44);
+    cursor: pointer;
+
+    right: 10%;
+    top: 10%;
+    width: 15%;
+    height: 75%;
+
+    display: flex;
+    border-radius: 5px;
+}
+.arrow-image{
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-left: 10px;
+}
+
+.item-descrincao{
+    height: 24vh;
+    background-color: #AA4221;
+    margin-right: 6vw;
+    margin-left: 6vw;
+    width: 60%;
+    border-radius: 5px;
+}
+.item-descrincao-text{
+    margin-left: 20px;
+    color: white;
+    font-size: 18px;
+}
+.item-price {
+    position: relative;
+    width: 96px;
+    height: 79px;
+    background-color: red;
+    border-radius: 5px;
+}
+.item-price-text{
+    position: absolute;
+    font-size: 40px;
+    margin-left: 10%;
+    margin-top: 20%;
+    text-align: center;
+    color: white;
+}
+.buy-button{
+    margin-top: 4em;
+    margin-left: auto;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    background-color: #1CC800;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.buy-button-text{
+    justify-content: center;
+    margin-left: 1em;
+    position: absolute;
+    font-size: 16px;
+    color: white;
+}
+.veja-tambem {
+    background-color: #AA4221;
+    margin-bottom: 2em;
+    margin-right: 6vw;
+    margin-left: 6vw;
+    border-radius: 5px;
+}

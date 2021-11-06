@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<%- include('includes/head'); %>
+<body onload="start();">
+    <%- include('includes/header') %>;
+
+    <section>
+
+        <div class="poster">
+            <img src="/img/posters/hamburger.svg" class="posterimage" alt="hamburger">
+        </div>
+
+        <main>
+        
+            <div>
+                <h1 class="line-text" id="search-results">Resultados Para: <%= search %> </h1>
+                <hr class="line">
+            </div>
+    
+            <div class="resultados itemgrid">
+                <div class="items">
+                    <% results.forEach(function (item){ %>
+                        <div class="box">
+                            <div class="item" href="/items/<%-item.name%> ">
+                                <img src="/img/items/<%-item.name%>.svg" class="item-image" alt="">
+                            </div>
+                            
+                            <img src="/img/name.svg" class="name-bar" alt="">
+                            <h1 class="name"> <%= item.name%> </h1>
+                        </div>
+                    <% });   %>
+
+                </div>
+            </div>
+
+        </main>
+        
+        <%- include('includes/footer') %>
+
+    </section>
+
+
+</body>
+</html>

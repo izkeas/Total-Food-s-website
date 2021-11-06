@@ -1,0 +1,73 @@
+<header class="header">
+    <div class="menu">
+        <img src="/img/Menu.svg" alt="">
+    </div>
+
+    <div class="home">
+        <img src="/img/Tfood.svg" alt="" width="100%">
+    </div>
+    
+    <div class="search_bar">
+        <img src="/img/search.svg" alt="" class="search_icon">
+        <textarea id="search_text" cols="20" rows="1" placeholder="Search.."></textarea>
+    </div>
+</header>
+
+<div class="menu-box" hidden>
+    <div class="menu-header">
+
+    </div>
+
+    <div class="menu-exit">
+        <img src="/img/close-menu.svg" alt="">
+    </div>
+
+    <div class="menu-item">
+        <h1 class="menu-title">Destaques</h1>
+        <h1 class="menu-text" href="/pesquisa/?top-selling=true">Mais vendidos</h1>
+    </div>
+    <div class="menu-item">
+        <h1 class="menu-title">Categorias</h1>
+        <h1 class="menu-text" href="/pesquisa/?category=sobremesas">Sobremesas</h1>
+        <h1 class="menu-text" href="/pesquisa/?category=refeicoes" >Refeições</h1>
+        <h1 class="menu-text" href="/pesquisa/?category=sorvetes" >Sorvetes</h1>
+        <h1 class="menu-text" href="/pesquisa/?category=salgados" >Salgados</h1>
+        <h1 class="menu-text" href="/pesquisa/?category=bolos">Bolos</h1>
+        <h1 class="menu-text" href="/pesquisa/?category=pizzas">Pizzas</h1>
+        <h1 class="menu-text" href="/pesquisa/?category=veganos">Comida vegana</h1>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $(".menu-exit").click(() => {
+            $(".menu-box").hide();
+        });
+
+        $(".menu").click(() =>{
+            $(".menu-box").show();
+        });
+
+        $(".home").click(() =>{
+            window.location.href = "/"
+        })
+
+        $("#search_text").keydown(function (e){
+            if (e.which === 13 && !e.shiftKey){
+                e.preventDefault();
+
+                let search = $(this).val();
+                document.location.href = "/pesquisa/"+search;
+            }
+        });
+
+        $(".item").bind("click", function (e) {
+            document.location.href = $(e.target).attr("href");
+        });
+
+        $(".menu-text").bind("click", function (e) {
+            document.location.href = $(e.target).attr("href");
+        });
+    });
+</script>

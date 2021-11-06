@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('includes/head'); %> 
+<body>
+    <%- include('includes/header'); %> 
+
+    <div class="poster">
+        <div class="posteritem">
+            <img src="/img/items/<%=item.name%>.svg" class="posterimage" alt="">
+        </div>
+        <div class="arrow-box">
+            <img src="/img/arrow.svg" class="arrow-image" alt="">
+        </div>
+    </div>
+
+    <div>
+        <h1 class="line-text" id="search-results"><%= item.name %> </h1>
+        <hr class="line">
+    </div>
+
+    <div class="flex-right">
+        <div class="item-descrincao">
+            <h1 class="item-descrincao-text">
+                <%= item.description %>
+            </h1>
+        </div>
+        <div class="item-price">
+            <h1 class="item-price-text">
+                R$4
+            </h1>
+            <div class="buy-button">
+                <h1 class="buy-button-text">
+                    comprar
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="line-text" id="search-results">Veja também</h1>
+        <hr class="line">
+    </div>
+
+    <div class="veja-tambem">
+        <div class="items">
+            <% see_more.forEach(function (item){ %>
+                <div class="box">
+                    <div class="item" href="/items/<%-item.name%> ">
+                        <img src="/img/items/<%-item.name%>.svg" class="item-image" alt="">
+                    </div>
+                    
+                    <img src="/img/name.svg" class="name-bar" alt="">
+                    <h1 class="name"> <%= item.name%> </h1>
+                </div>
+            <% });   %>
+
+        </div>
+    </div>
+
+    <%- include('includes/footer'); %>
+</body>
+</html>
